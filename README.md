@@ -1,18 +1,4 @@
-# GitExplorer
-Table of Contents
-
-[Intro](https://github.com/summitech/gitexplorer/blob/master/README.md#intro)
-
-[Tech Stack](https://github.com/summitech/gitexplorer/blob/master/README.md#tech-stack)
-
-[Installation](https://github.com/summitech/gitexplorer/blob/master/README.md#installation)
-
-[Makers](https://github.com/summitech/gitexplorer/blob/master/README.md#makers)
-
-[Contribute](https://github.com/summitech/gitexplorer/blob/master/README.md#contribute)
-
-[Donate](https://github.com/summitech/gitexplorer/blob/master/README.md#donate)
-
+# 1x-Onboarding
 [RoadMap](https://github.com/summitech/gitexplorer/blob/master/README.md#roadmap)
 
 ### Intro
