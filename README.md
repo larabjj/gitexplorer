@@ -1,15 +1,4 @@
 # 1x-Onboarding
-[RoadMap](https://github.com/summitech/gitexplorer/blob/master/README.md#roadmap)
-
-### Intro
-Last year, we came across [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Git.
-
-Website: [Click to find the right git commands without digging through the web.](https://gitexplorer.com)
-
-Explore and Enjoy! 
-
-You can reach us on [the official git explorer twitter handle](https://twitter.com/gitexplorer) or on [Summitech's twitter handle](https://twitter.com/summitechng).
-
 
 ### Tech Stack
 
