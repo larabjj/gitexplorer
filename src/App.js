@@ -20,6 +20,7 @@ class App extends Component {
       thirdOption: null,
       nb: '',
       usage: '',
+      tool: '',
       copied: false
     };
   }
@@ -43,7 +44,8 @@ class App extends Component {
         secondOption: null,
         showThird: false,
         nb: '',
-        usage: ''
+        usage: '',
+        tool: ''
       });
     } else if (optionsSecond[selectedOption.value].length === 1) {
       this.setState({ firstOption: selectedOption, showSecond: true });
@@ -55,12 +57,13 @@ class App extends Component {
 
   onSecondChange = (selectedOption) => {
     if (selectedOption.usage) {
-      this.setState({ nb: '', usage: '' }, () => {
+      this.setState({ nb: '', usage: '', tool: '' }, () => {
         this.setState({
           secondOption: selectedOption,
           showThird: false,
           nb: selectedOption.nb,
           usage: selectedOption.usage,
+          tool: selectedOption.tool,
           thirdOption: null
         });
       });
@@ -70,7 +73,8 @@ class App extends Component {
         showThird: true,
         thirdOption: null,
         nb: '',
-        usage: ''
+        usage: '',
+        tool: ''
       });
       this.onThirdChange(optionsThird[selectedOption.value][0]);
     } else {
@@ -79,17 +83,19 @@ class App extends Component {
         showThird: true,
         thirdOption: null,
         nb: '',
-        usage: ''
+        usage: '',
+        tool: ''
       });
     }
   };
 
   onThirdChange = (selectedOption) => {
-    this.setState({ nb: '', usage: '' }, () => {
+    this.setState({ nb: '', tool: '', usage: '' }, () => {
       this.setState({
         thirdOption: selectedOption,
         nb: selectedOption.nb,
-        usage: selectedOption.usage
+        usage: selectedOption.usage,
+        tool: selectedOption.tool
       });
     });
   };
@@ -137,6 +143,7 @@ class App extends Component {
       fastType,
       nb,
       usage,
+      tool,
       copied
     } = this.state;
     const avgTypingDelay = fastType ? 0 : 50;
@@ -149,14 +156,14 @@ class App extends Component {
             <div className="row">
               <div className="col-5">
                 <h2 className="content__title  dark-white">
-                  Git <span>Command</span> Explorer
+                  Welcome to <span>1xINTERNET</span>
                 </h2>
                 <p className="content__subtitle dark-grey">
-                  Find the right commands you need without digging through the web.
+                  We work across different locations and support remote working cultures.
                 </p>
 
                 <div className="options">
-                  <h4 className="options__title">I want to:</h4>
+                  <h4 className="options__title">Table of contents:</h4>
 
                   <Select
                     placeholder="..."
@@ -197,7 +204,25 @@ class App extends Component {
                 <div
                   className={`board__group board__group--1 ${isMobile && !usage ? ' d-none' : ''}`}
                 >
+                  {tool ? (
+                  <div className="board__group board__group--1">
+                    <h2 className="board__title  dark-white">Tool</h2>
+                    <div className="board board--1">
+                      <pre>
+                        <Typist avgTypingDelay={avgTypingDelay} cursor={{ show: false }}>
+                          {tool}
+                        </Typist>
+                      </pre>
+                    </div>
+                  </div>
+                  ) : null}
+                  {tool && usage ? (
+                    <div className="board__group--2"></div>
+                  ) : ''}
+                  {usage ? (
                   <h2 className="board__title  dark-white">Usage</h2>
+                  ) : null}
+                  {usage ? (
                   <div className="board board--1">
                     <pre>
                       {usage.length ? (
@@ -222,6 +247,7 @@ class App extends Component {
                       </div>
                     ) : null}
                   </div>
+                  ) : null}
 
                   {nb ? (
                     <div className="board__group board__group--2">

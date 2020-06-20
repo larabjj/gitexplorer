@@ -336,7 +336,7 @@ body {
   font-size: 1.6rem; }
 
 .home {
-  background: #eef0f2;
+  background: #f3f3f7;
   transition: background 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .home__container {
     display: flex;
@@ -348,7 +348,7 @@ body {
       .home__container {
         padding: 3rem; } }
   .home.dark {
-    background: #20252d; }
+    background: #010043; }
     .home.dark .dark-white {
       color: #fff !important; }
     .home.dark .board {
@@ -395,10 +395,10 @@ body {
     flex: 1;
     padding-top: 10rem; }
     .home .content__title {
-      color: #20252d;
+      color: #010043;
       letter-spacing: 1px; }
       .home .content__title span {
-        color: #00bfaa; }
+        color: #e5322d; }
     @media (max-width: 575px) {
       .home .content {
         padding-top: 5rem; } }
@@ -420,7 +420,7 @@ body {
         letter-spacing: 1px;
         margin: 0;
         transition: 0.1s color;
-        color: #00bfaa;
+        color: #e5322d;
         font-weight: bold;
         margin-bottom: 2rem; }
       .home .content .options-select {
@@ -456,9 +456,9 @@ body {
       .home .content .boards {
         margin-bottom: 15rem; } }
     .home .content .board {
-      background: #20252d;
+      background: #010043;
       border-radius: 1rem;
-      border-left: 1rem solid #00bfaa;
+      border-left: 1rem solid #e5322d;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -469,7 +469,7 @@ body {
       .home .content .board pre {
         margin: 0; }
       .home .content .board__title {
-        color: #20252d;
+        color: #010043;
         letter-spacing: 1px;
         margin-bottom: 1rem; }
       .home .content .board--2 .Typist {
@@ -498,7 +498,7 @@ body {
     background: #fff;
     border-radius: 0.3rem;
     bottom: 50%;
-    color: #20252d !important;
+    color: #010043 !important;
     display: inline-block;
     font-size: 1rem;
     padding: 0.2rem 0.5rem;
@@ -555,13 +555,13 @@ body {
       left: 25px;
       transition: 0.5s; }
     .toggler input[type='checkbox']:checked ~ .switch {
-      background: #00baa5;
+      background: #e42e28;
       transition: 0.5s; }
   .toggler .switch {
     display: block;
     width: 45px;
     height: 10px;
-    background: #00bfaa;
+    background: #e5322d;
     border-radius: 5px;
     position: absolute;
     top: 0;

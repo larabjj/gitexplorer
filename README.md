@@ -28,9 +28,6 @@ You can reach us on [the official git explorer twitter handle](https://twitter.c
 ### Tech Stack
 
 - React
-- Netlify
-- Our first hosting platform was [Surge](https://surge.sh). Super easy to set up and very reliable :+1:. 100% recommend!
-
 
 ### Installation
 ```
@@ -50,10 +47,6 @@ docker-compose up
 Awesome devs and designer at [Summitech](https://summitech.ng)
 
 ### Contribute
-Thank you for contributing to GitExplorer!
-
-Please follow the below instructions to send a Pull Request (Search the website to make sure that this command doesn't already exist).
-
 The data folder (inside the src directory) is where you will be operating from. The three files you should be concerned with are the `primary-options.js`, `secondary-options.js` and `tertiary-options.js` files. 
 
 These three files are responsible for the options a user can pick. 
@@ -119,11 +112,6 @@ show: [
     }
   ]
   ```
-4. Once you are done, add, commit, push and create a PR to Master.
-
-### Donate
-
- You can also contribute to the continued success of the project via donation. Please click this [link](https://rave.flutterwave.com/donate/bavfmdlomzs2).
 
  ### RoadMap
 

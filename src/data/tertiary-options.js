@@ -1,105 +1,25 @@
 export const tertiaryOptions = {
-  logs: [
+  'communications-tools': [
     {
-      value: 'all',
-      label: 'all',
-      usage: 'git log',
-      nb: 'Type q in the terminal to exit the logs'
+      value: 'slack',
+      tool: 'https://1xinternet.slack.com',
+      label: 'Slack',
+      usage: '',
+      nb: 'Here are some best practices:\n\nInform you colleagues in the general channel, when you start working (e.g. write "good morning")\n\nInform you colleagues in the general channel, when you stop working (e.g. write "done for the day" or "out for driving school lessons will be back in 2 hours")\n\nWhen you start working on a project, let you colleagues know in the project channel (e.g. write "working here" or "working on issue 123")\n\nWhen you stop working on a project, let your colleagues know in the project channel (e.g. write "switching to project xyz")\n\nCheck you slack messages regularly - it is ok to focus on a project, but if you are mentioned you should respond within 1-2 hours.'
     },
     {
-      value: 'last-n-commit',
-      label: 'for last xxx number of commits',
-      usage: 'git log -n',
-      nb: 'Replace n with number of commits e.g. git log -2'
+      value: 'email',
+      tool: 'On your first day, your mentor will give you access to your email account.\n\nPlease log in here: https://www.gmail.com ',
+      label: 'Email',
+      usage: '',
+      nb: 'Please never use personal email addresses or accounts for work. \n\nWe sign confidentiality agreements with clients and you have signed one with us. If you need additional email addresses, reach out to devops.'
     },
     {
-      value: 'particular-period',
-      label: 'since a particular period',
-      usage: 'git log --since=period',
-      nb: 'Replace period with intended timeframe e.g git log --since=3days. You can use dates like 2018-12-31.\n\n Similar flags are --until, --before, --after'
-    },
-    {
-      value: 'commit-on-oneline',
-      label: 'with each commit on one line',
-      usage: 'git log --oneline'
-    },
-    {
-      value: 'patches-introduced',
-      label: 'with the patches introduced in each commit',
-      usage : 'git log -p'
+      value: 'xtimes',
+      label: '1x Times',
+      tool: 'Time Tracking Plugin learn how to track your time here:\n\nhttps://playbook.1xinternet.de/time-tracking',
+      usage: 'https://xtimes.1xinternet.de',
+      nb: 'The times system is our own PM / Time-tracking / CRM tool.\n\nWe track our work times in order to know how we are doing in our projects.'
     }
   ],
-  branch: [
-    {
-      value: 'in',
-      label: 'while working in the branch',
-      usage: 'git branch -m <new name>'
-    },
-    {
-      value: 'outside',
-      label: 'from outside the branch',
-      usage: 'git branch -m <old name> <new name>'
-    }
-  ],
-  'add-new-branch': [
-    {
-      value: 'no-checkout',
-      label: 'but remain in the current branch I am working from',
-      usage: 'git branch <new name>'
-    },
-    {
-      value: 'checkout',
-      label: 'and switch to the new branch',
-      usage: 'git checkout -b <new name>'
-    },
-    {
-      value: 'checkout-remote',
-      label: 'from another branch',
-      usage: 'git checkout -b <new name> <another branch>'
-    }
-  ],
-  'apply-stash': [
-    {
-      value: 'latest',
-      label: 'latest stash',
-      usage: 'git stash apply'
-    },
-    {
-      value: 'specific',
-      label: 'a specific stash',
-      usage: 'git stash apply <stash id>',
-      nb: 'The stash id can be gotten when you run git stash list. It\'s usually in this format: stash@{index} e.g. stash@{0}'
-    },
-    {
-      value: 'pop',
-      label: 'and delete stash',
-      usage: 'git stash pop <stash id>',
-      nb: 'Stash id optional. Add it if you want to apply and delete a specific stash otherwise leave to pop the latest stash'
-    }
-  ],
-  'delete-stash': [
-    {
-      value: 'all',
-      label: 'all stashed changes',
-      usage: 'git stash clear'
-    },
-    {
-      value: 'specific',
-      label: 'specific stash',
-      usage: 'git stash drop <stash id>'
-    },
-  ],
-  'delete-multiple-branches': [
-    {
-      value: 'name',
-      label: 'by name',
-      usage: 'git branch -D <branch name> <branch name> <branch name>'
-    },
-    {
-      value: 'pattern',
-      label: 'by pattern',
-      usage: 'git branch | grep <regex pattern> | xargs git branch -D',
-      nb: 'e.g. git branch | grep "-" | xargs git branch -D will delete all branches that have \'-\' in their names or git branch | grep -v "master\\|staging" | xargs git branch -D will delete all branches except staging and master.\n\nNB: Always put your regex pattern in quotes'
-    }
-  ]
 };
